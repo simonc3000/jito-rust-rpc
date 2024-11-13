@@ -60,7 +60,7 @@ impl JitoJsonRpcSDK {
             .send()
             .await?;
 
-        let status = response.status();
+        // let status = response.status();
         // println!("Response status: {}", status);
 
         let body = response.json::<Value>().await?;
